@@ -81,7 +81,7 @@ public class BeerServiceTest {
         // then
         assertThrows(BeerAlreadyRegisteredException.class, () -> beerService.createBeer(expectedBeerDTO));
     }
-
+/*
     @Test
     void whenValidBeerNameIsGivenThenReturnABeer() throws BeerNotFoundException {
         // given
@@ -202,7 +202,7 @@ public class BeerServiceTest {
         when(beerRepository.findById(INVALID_BEER_ID)).thenReturn(Optional.empty());
 
         assertThrows(BeerNotFoundException.class, () -> beerService.increment(INVALID_BEER_ID, quantityToIncrement));
-    }
+    }*/
 //
 //    @Test
 //    void whenDecrementIsCalledThenDecrementBeerStock() throws BeerNotFoundException, BeerStockExceededException {
